@@ -6,7 +6,7 @@ from segment import Model
 # Flaskのインスタンス生成
 app = Flask(__name__)
 
-# URLにおいて, GETメソッドを用いたリクエスト処理
+# ルーティング指定:URLにおいて, GETメソッドを用いたリクエスト処理
 @app.route('/v1/segment', methods=['GET'])
 def run():
     model = Model()
